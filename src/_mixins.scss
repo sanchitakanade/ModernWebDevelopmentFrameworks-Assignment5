@@ -1,0 +1,6 @@
+@mixin backImage($image, $horizontal-pos:left, $vertical-pos:top, $repeat: repeat, $color:transparent) {
+    background: url($image);
+    background-position: $horizontal-pos $vertical-pos;
+    background-repeat: $repeat;
+    background-color: $color;
+}
