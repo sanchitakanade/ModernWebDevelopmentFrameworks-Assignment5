@@ -1,6 +1,24 @@
+//  Name: Sanchita Kanade
+//	Instructor Name: Zak Ruvalcaba
+//	Class: CS648.01 Modern Web Development Frameworks Fall 2019
+//	File: _mixins.scss
+//   Assignment No.: 5
+
+
 @mixin backImage($image, $horizontal-pos:left, $vertical-pos:top, $repeat: repeat, $color:transparent) {
     background: url($image);
     background-position: $horizontal-pos $vertical-pos;
     background-repeat: $repeat;
     background-color: $color;
 }
+
+@mixin setWidth($totalWidth, $qty, $margin) {
+    width: (($totalWidth - (($qty - 1) * $margin)) / $qty);
+}
+
+@mixin adjustContent ($length) {
+    @media (max-width: $length) {
+        @content;
+    }
+} 
+

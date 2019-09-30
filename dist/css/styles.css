@@ -1,3 +1,10 @@
+/*  Name: Sanchita Kanade
+	Instructor Name: Zak Ruvalcaba
+	Class: CS648.01 Modern Web Development Frameworks Fall 2019
+	File: styles.css
+  Assignment No.: 5
+*/
+
 figure {
   background: url("../images/logo.png");
   background-position: 0 50px;
@@ -60,13 +67,15 @@ header {
     color: #FFF;
     font-weight: 900;
     font-size: 2.5em;
-    line-height: 0;
-    margin-bottom: 70px; }
+    line-height: 0; }
   header h3 {
     color: #666;
     font-weight: 400;
     font-size: 2em;
-    line-height: 0;
+    line-height: 0; }
+  header h2 {
+    margin-bottom: 70px; }
+  header h3 {
     margin-bottom: 50px; }
 
 /* FOOTER */
@@ -151,7 +160,7 @@ footer {
     float: right; }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
   main {
     width: 768px; }
   figure {
@@ -179,7 +188,7 @@ footer {
       width: 46%;
       margin: 0 2%; } }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   main {
     width: 460px; }
   nav ul li {
@@ -201,7 +210,7 @@ footer {
     margin: 0 2%;
     float: none; } }
 
-@media screen and (max-width: 459px) {
+@media (max-width: 459px) {
   main {
     width: 300px; }
   figure {

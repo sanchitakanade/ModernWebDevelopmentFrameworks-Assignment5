@@ -1,5 +1,12 @@
+//  Name: Sanchita Kanade
+//	Instructor Name: Zak Ruvalcaba
+//	Class: CS648.01 Modern Web Development Frameworks Fall 2019
+//	File: _media.scss
+//   Assignment No.: 5
+
+
 /* MEDIA QUERIES */
-@media screen and (max-width:959px) {
+@include adjustContent(959px) {
     main 	   {width:768px;}
     figure	   {width:inherit;height:140px;float:none;background-position:center;} 
     nav        {
@@ -19,9 +26,9 @@
                 width:inherit;
                 #products, #testimonials {width:46%;margin:0 2%;}
                 }
-    }
+}
     
-    @media screen and (max-width:767px) {
+@include adjustContent(767px) {
     main 		{width:460px;}
     nav ul li	{font-size:0.8em;margin:0 5px;}
     header 		{
@@ -33,9 +40,9 @@
 
     #headline h1 {font-size:2em;padding-top:50px;}
     #content     { #products, #testimonials {width:96%;margin:0 2%;float:none;}}
-    }
+}
     
-    @media screen and (max-width:459px) {
+@include adjustContent(459px) {
     main 						{width:300px;}
     figure						{background-size:contain;height:100px;}
     nav							{margin-bottom:40px !important;}
@@ -52,4 +59,4 @@
                                 text-align:center;
                                 p, img {float:none;margin:0;}
                                 }
-    }
+}

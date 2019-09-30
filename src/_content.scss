@@ -1,3 +1,11 @@
+//  Name: Sanchita Kanade
+//	Instructor Name: Zak Ruvalcaba
+//	Class: CS648.01 Modern Web Development Frameworks Fall 2019
+//	File: _content.scss
+//   Assignment No.: 5
+
+
+
 #headline   {   
                 width:100%;
                 height:130px;
@@ -20,8 +28,8 @@
                 font-weight:400;
             }
             #products {
-                    width:460px;
-                    float:left;
+                @include setWidth(940px, 2, 20px);
+                float:left;
             }
             img  {
                 float:left;
@@ -31,7 +39,7 @@
             h4       {line-height:1em;}
 
             #testimonials {
-                            width:460px;
-                            float:right;
-                        }
+                @include setWidth(940px, 2, 20px);
+                float:right;
+            }
 }
